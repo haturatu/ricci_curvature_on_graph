@@ -1,5 +1,5 @@
 # wip
-@@wowowo-wo
+@wowowo-wo
 
 # Usage
 pyenv setup
@@ -23,6 +23,7 @@ source ~/.bashrc
 ```
 
 ```bash
+cd ~ ; mkdir git ; cd git ; git clone https://github.com/haturatu/ricci_curvature_on_graph ; cd ricci_curvature_on_graph
 # pyenvの仮想環境としてライブラリが対応しているPythonのバージョンをインストール
 pyenv install 3.10.13
 
