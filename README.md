@@ -15,7 +15,9 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev \
 curl https://pyenv.run | bash
 
 # pyenvに必要な環境変数を初期化する処理をシェルに入った後実行
-echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
 
 # 現在のシェルで.bashrcを実行し、適応
